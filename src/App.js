@@ -75,8 +75,8 @@ function App() {
 
   return (
     <div className="flex justify-center items-center h-screen font-sans">
-     <div className="w-2/6 border-slate-300 border-2 h-auto flex flex-col rounded-lg gap-y-3">
-        <p className='font-bold p-5 text-center'>User Registration</p>
+     <div className="w-full md:w-2/3 lg:w-1/2 border-slate-300 border-2 h-auto flex flex-col rounded-lg gap-y-3 p-4">
+        <p className='font-bold text-lg text-center'>User Registration</p>
 
         <TextField 
           label="Username"
@@ -106,9 +106,9 @@ function App() {
           errorMessage={'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.'}
         />
 
-        <div className='flex justify-center my-5'>
+        <div className='flex justify-center '>
         <button 
-        className='w-1/2 p-2 rounded bg-teal-500 font-bold text-white text-sm cursor-pointer hover:bg-teal-600'
+        className='w-full md:w-1/2 p-2 rounded bg-teal-500 font-bold text-white text-sm cursor-pointer hover:bg-teal-600'
         onClick={handleSubmit}>
           Submit
         </button>
